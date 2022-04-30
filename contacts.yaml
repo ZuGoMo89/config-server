@@ -5,7 +5,7 @@ server:
 # Spring properties
 spring:  
   application:
-    name: contacts
+    name: arquitect
  
 # Discovery Server Access
 eureka:
