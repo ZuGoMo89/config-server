@@ -1,0 +1,18 @@
+server:  
+  port: 8058
+ 
+spring:
+  application:
+    name: arquitectclient
+ 
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8760/eureka/
+ 
+microservicio:
+  contact:
+    name: api-gateway
+    findAllUrl: http://${microservicio.arquitect.nombre}/arquitect
+    saveUrl: http://${microservicio.arquitect.nombre}/arquitect
+    deleteUrl: http://${microservicio.contact.nombre}/arquitect/{id}
